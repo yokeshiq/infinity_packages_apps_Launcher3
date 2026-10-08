@@ -1065,8 +1065,7 @@ public static boolean useAlternativeQuickspaceUI(Context context) {
 
     public static void startLmoFreeform(Context context, ComponentName activity,
             int userId, int taskId) {
-        final Intent intent = new Intent(FREEFORM_INTENT)
-                .setPackage(FREEFORM_PACKAGE)
+        final Intent intent = new Intent("org.rising.intent.START_MINI_WINDOW")
                 .putExtra("packageName", activity.getPackageName())
                 .putExtra("activityName", activity.getClassName())
                 .putExtra("userId", userId)
